@@ -1,0 +1,33 @@
+(a-i) Replace each '...' below with the binary representation.
+
+x5020 = 0101000000100000
+x923F = 1001001000111111
+x1261 = 0001001001100001
+x1240 = 0001001001000000
+x1240 = 0001001001000000
+x103F = 0001000000111111
+x03FC = 0000001111111100
+
+(a-ii)
+AND R0, R0, #0
+NOT R1, R0
+ADD R1, R1, #1
+ADD R1, R1, R0
+ADD R1, R1, R0
+ADD R0, R0, #31
+BRp 0x7F
+
+(b-i)
+7
+
+(b-ii)
+17
+
+(c)
+Clears R0
+Makes R1 all 1's
+Adds 1 to R1 making it all 0's
+Adds 0 to R1
+Adds 0 to R1
+Adds 31 to R0
+Branches somewhere else
